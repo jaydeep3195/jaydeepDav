@@ -2,7 +2,6 @@
 def calculate_monthly_payment(principal, annual_interest_rate, years):
     monthly_interest_rate = annual_interest_rate / 100 / 12
     number_of_payments = years * 12
-    # Added a different formula for monthly payment
     monthly_payment = principal * (monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_payments) / ((1 + monthly_interest_rate) ** number_of_payments - 1)
     return round(monthly_payment, 2)  # Change to round the monthly payment to 2 decimal places
 
